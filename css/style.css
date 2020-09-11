@@ -1,0 +1,41 @@
+#slider {
+  position: relative;
+  overflow: hidden;
+}
+
+#slider .slider-middle {
+  position: relative;
+  left: 0;
+}
+
+#slider .slider-middle .slider-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#slider .slider-middle .slider-item img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#slider .next, #slider .prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: red;
+  cursor: pointer;
+  z-index: 9;
+}
+
+#slider .next {
+  right: 20px;
+}
+
+#slider .prev {
+  left: 20px;
+}
+/*# sourceMappingURL=style.css.map */

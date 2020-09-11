@@ -1,0 +1,30 @@
+#slider{
+    position: relative;
+    overflow: hidden;
+    .slider-middle{
+        position: relative;
+        left: 0;
+        .slider-item{
+            flex: 1;
+            img{
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+            }
+        }
+    }
+    .next,.prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: red;
+        cursor: pointer;
+        z-index: 9;
+    }
+    .next{
+        right: 20px;
+    }
+    .prev{
+        left: 20px;
+    }
+}
